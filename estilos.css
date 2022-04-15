@@ -29,6 +29,77 @@ header{
     padding-right: 15px;
     
 }
+/*------------------*\
+        MENU
+\*------------------*/
+.menu{
+    margin:0;
+
+    font-size: 1rem;
+
+    list-style: none;
+}
+
+
+
+/*------------------*\
+  MENU TELAS PEQUENAS
+\*------------------*/
+
+@media(max-width: 991px){
+    .menu{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+
+        padding: 20px;
+        width: 150px;
+
+        border-right: 1px solid #eee;
+
+        background-color: #fbfbfb;
+    }
+
+    .menu__item{
+        display:block;
+
+        line-height: 3;
+
+        
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+}
+
+/*------------------*\
+  MENU TELAS GRANDES
+\*------------------*/
+
+@media(min-width:992px){
+    .menu__item{
+        display: inline-block;
+
+        padding-top: 40px;
+        
+        padding-right:15px;
+
+        
+        
+    }
+
+    a{
+        text-decoration: none;
+
+        height: 50px;
+    }
+
+    
+}
+
 
 /*-------------*\
     NAVEGACAO
