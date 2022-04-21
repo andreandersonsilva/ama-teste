@@ -63,12 +63,24 @@ header{
         border-right: 1px solid #eee;
 
         background-color: #fbfbfb;
+
+       
+
+        
+
+        
+        
+        
     }
+
+    
 
     .menu--exibindo{
         display: block;
         /*Ocultando o menu para mobile*/
         display:none;
+        
+        
     }
 
     .menu__item{
@@ -87,9 +99,14 @@ header{
 
     a:hover{
         color: #CE9CFD;
+        
 
        
     }
+
+    
+
+    
 
 }
 
@@ -159,6 +176,8 @@ header{
     outline: none;
     
 }
+
+
 
 @media(min-width: 992px){
     .botao-chaveador{
