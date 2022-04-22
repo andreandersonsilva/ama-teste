@@ -29,6 +29,18 @@ header{
     padding-right: 15px;
     
 }
+
+.layout-cabecalho--home{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: #fbfbfb;
+}
+
+
 /*------------------*\
         MENU
 \*------------------*/
@@ -38,6 +50,9 @@ header{
     font-size: 1rem;
 
     list-style: none;
+
+    
+
 }
 
 
@@ -64,13 +79,6 @@ header{
 
         background-color: #fbfbfb;
 
-       
-
-        
-
-        
-        
-        
     }
 
     
@@ -79,16 +87,12 @@ header{
         display: block;
         /*Ocultando o menu para mobile*/
         display:none;
-        
-        
     }
 
     .menu__item{
         display:block;
 
         line-height: 3;
-
-        
     }
 
     a{
@@ -184,3 +188,180 @@ header{
         display:none;
     }
 }
+
+
+/*-------------*\
+    CORPO
+\*-------------*/
+
+.layout-chamada{
+    margin-top: 100px; /*Ajuste da img da section para baixo devido ao fixed do menu*/
+}
+
+
+
+/*-------------*\
+    RODAPE
+\*-------------*/
+
+.layout-rodape{
+    width: 100%;
+    height: 180px;
+
+    position: relative;
+
+    padding: 0;
+    
+
+    color: black;
+    text-align: center;
+    
+    font-size:0.7em;
+
+    background-color: #f6eeff;
+
+}
+
+.coluna1-rodape{
+    float: left;
+    width: 50%;
+
+    
+    height: 120px;
+
+    
+    background-color: #f6eeff;
+}
+
+.coluna2-rodape{
+    
+    float: right;
+    width: 50%;
+
+    height: 120px;
+
+    
+    background-color: #f6eeff;
+}
+
+
+.layout-rodape-inferior{
+    width: 100%;
+
+    background-color: #a13dff;
+}
+
+
+.logo__rodape{
+    position:relative;
+    left: -210px;
+    top:13px;
+}
+
+.rede-facebook{
+
+    position: relative;
+    margin-bottom: 8px;
+    left:150px;
+    top:28px;
+}
+
+.rede-instagram{
+
+    position: relative;
+    left:150px;
+    top:28px;
+}
+
+
+@media(max-width: 991px){
+    
+    .coluna1-rodape {
+        width:100%;
+    }
+
+    .coluna2-rodape{
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    .logo__rodape{
+        position:relative;
+        left: auto;
+        top:13px;
+    }
+
+    .rede-facebook{
+
+        position: relative;
+        left:auto;
+        top:15px;
+        
+        
+    
+    }
+    
+    .rede-instagram{
+    
+        position: relative;
+        left:auto;
+        top:15px;
+        
+    
+    }
+
+    
+}
+
+.layout-rodape-inferior{
+      
+    position: absolute;
+    bottom:0;
+    border-top: 1px solid rgb(185, 185, 185);
+    
+    padding: 10px 0;
+
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background-color: #d1a9ff;
+}
+
+
+.direitos-autorais{
+    position: relative;
+    top: 12px;
+    
+}
+
+
+@media(max-width: 991px){
+    .layout-rodape-inferior{
+      
+        position: absolute;
+        bottom:-100px;     
+        
+        padding: 10px 0;
+    
+        width: 100%;
+        height: 60px;
+        padding: 0;
+        background-color: #d1a9ff;
+    }
+    
+    
+    .direitos-autorais{
+        position: relative;
+        height: 40px;
+        top: 22px;
+        margin:0;
+        
+    }
+}
+
+
+
+
+
+
