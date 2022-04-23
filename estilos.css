@@ -7,7 +7,7 @@ body{
     margin: 0;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size:14px;
+    font-size:1.4rem;
 }
 
 /*-------------*\
@@ -47,7 +47,7 @@ header{
 .menu{
     margin:0;
 
-    font-size: 1rem;
+    font-size: 1.4rem;
 
     list-style: none;
 
@@ -122,7 +122,7 @@ header{
     .menu__item{
         display: inline-block;
 
-        padding-top: 45px;
+        padding-top: 40px;
         
         padding-right:15px;
 
@@ -194,15 +194,41 @@ header{
     CORPO
 \*-------------*/
 
-.layout-chamada{
+.banner-ama{
     margin-top: 100px; /*Ajuste da img da section para baixo devido ao fixed do menu*/
+  
 }
 
+.layout-banner-ama{
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
 
+/*-------------*\
+    CORPO-HOME
+\*-------------*/
+
+.corpo-home{
+    width: 100%;
+    height: 1500px;
+    padding: 0;
+    z-index: 2;
+    
+    background-color: #CE9CFD;
+}
 
 /*-------------*\
     RODAPE
 \*-------------*/
+
+.menu__item-rodape{
+    display: none;
+}
+
+.rodape-superior{
+    display:none;
+}
 
 .layout-rodape{
     width: 100%;
@@ -223,57 +249,68 @@ header{
 
 }
 
-.coluna1-rodape{
-    float: left;
-    width: 50%;
+@media(min-width:992px){
+    .coluna1-rodape{
+        float: left;
+        width: 33%;
 
-    
-    height: 120px;
+        
+        height: 120px;
 
-    
-    background-color: #f6eeff;
+        
+        background-color: #f6eeff;
+    }
+
+    .coluna2-rodape{
+        
+        float: left;
+        width: 33%;
+
+        height: 120px;
+
+        
+        background-color: #f6eeff;
+    }
+
+    .coluna3-rodape{
+        
+        float: left;
+        width: 33%;
+
+        height: 120px;
+
+        
+        background-color: #f6eeff;
+    }
+
+
+    .layout-rodape-inferior{
+        width: 100%;
+
+        background-color: #a13dff;
+    }
+
+
+    .logo__rodape{
+        position:relative;
+        right: 113px;
+        top:13px;
+    }
+
+    .menu__item-rodape{
+        display: inline-block;
+    }
+
+    /*PEDENTE AJUSTE DE IMAGENS DO RODAPE*/
+    .logo__social{
+        display: inline-block;
+        
+        height: 120px;
+        padding-top:20px ;
+        
+        
+    }
 }
-
-.coluna2-rodape{
-    
-    float: right;
-    width: 50%;
-
-    height: 120px;
-
-    
-    background-color: #f6eeff;
-}
-
-
-.layout-rodape-inferior{
-    width: 100%;
-
-    background-color: #a13dff;
-}
-
-
-.logo__rodape{
-    position:relative;
-    left: -210px;
-    top:13px;
-}
-
-.rede-facebook{
-
-    position: relative;
-    margin-bottom: 8px;
-    left:150px;
-    top:28px;
-}
-
-.rede-instagram{
-
-    position: relative;
-    left:150px;
-    top:28px;
-}
-
 
 @media(max-width: 991px){
     
@@ -285,6 +322,11 @@ header{
         width: 100%;
         height: 100px;
         
+    }
+
+    .coluna3-rodape{
+        width:100%;
+        height:100px ;
     }
 
     .logo__rodape{
@@ -361,6 +403,9 @@ header{
     }
 }
 
+.clearfix{
+    clear:both;
+}
 
 
 
