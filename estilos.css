@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -27,7 +26,6 @@ header{
     margin: 0 auto; /*Ajuste do container superior e inferio 0 e direita esquerda automático*/
     padding-left: 15px;
     padding-right: 15px;
-    
 }
 
 .layout-cabecalho--home{
@@ -50,9 +48,6 @@ header{
     font-size: 1.4rem;
 
     list-style: none;
-
-    
-
 }
 
 
@@ -78,7 +73,6 @@ header{
         border-right: 1px solid #eee;
 
         background-color: #fbfbfb;
-
     }
 
     
@@ -103,15 +97,7 @@ header{
 
     a:hover{
         color: #CE9CFD;
-        
-
-       
     }
-
-    
-
-    
-
 }
 
 /*------------------*\
@@ -125,9 +111,6 @@ header{
         padding-top: 40px;
         
         padding-right:15px;
-
-        
-        
     }
 
     .menu__item:last-of-type{
@@ -145,11 +128,7 @@ header{
 
     a:hover{
         color: #CE9CFD;
-
-       
     }
-
-    
 }
 
 
@@ -172,16 +151,11 @@ header{
     margin-top:40px;
     margin-right: 20px;
 
-    
-    
     background: none;
     background-image: url("imagem/barras.png");
     
     outline: none;
-    
 }
-
-
 
 @media(min-width: 992px){
     .botao-chaveador{
@@ -211,7 +185,7 @@ header{
 
 .corpo-home{
     width: 100%;
-    height: 1500px;
+    height: 1000px;
     padding: 0;
     z-index: 2;
     
@@ -226,182 +200,188 @@ header{
     display: none;
 }
 
-.rodape-superior{
-    display:none;
-}
 
-.layout-rodape{
-    width: 100%;
-    height: 180px;
 
-    
-    position: relative;
-
-    padding: 0;
-    
-
-    color: black;
-    text-align: center;
-    
-    font-size:0.7em;
-
-    background-color: #f6eeff;
-
-}
+/*---------------*\
+RODAPE-TELA-GRANDE
+\*---------------*/
 
 @media(min-width:992px){
     .coluna1-rodape{
+        position: relative;
         float: left;
         width: 33%;
-
-        
+               
         height: 120px;
 
-        
         background-color: #f6eeff;
     }
 
     .coluna2-rodape{
-        
-        float: left;
-        width: 33%;
+        position: relative;
+        float:left;
+        width: 34%;
 
         height: 120px;
 
-        
         background-color: #f6eeff;
     }
 
     .coluna3-rodape{
-        
-        float: left;
+        position: relative;
+        float: right;
         width: 33%;
 
         height: 120px;
 
-        
         background-color: #f6eeff;
     }
 
 
-    .layout-rodape-inferior{
+    .layout-rodape{
+        position: relative;
         width: 100%;
-
         background-color: #a13dff;
     }
 
 
     .logo__rodape{
-        position:relative;
-        right: 113px;
-        top:13px;
+        position:absolute;
+        
+        top:10px;
+        left: 20px;
+    }
+
+    .logo-social--facebook{
+        position:absolute;
+        
+        
+        left: 48%;
+        top:15px;
+
+        
+    }
+
+    .logo-social--instagram{
+        position: absolute;
+        
+
+        left: 48%;
+        top:65px;
     }
 
     .menu__item-rodape{
-        display: inline-block;
+        
+        display:block;
+
+        text-align:right;
+
+        
+        padding: 5px 60px 5px 200px;
+
     }
 
-    /*PEDENTE AJUSTE DE IMAGENS DO RODAPE*/
-    .logo__social{
-        display: inline-block;
-        
-        height: 120px;
-        padding-top:20px ;
-        
-        
-    }
-}
-
-@media(max-width: 991px){
-    
-    .coluna1-rodape {
-        width:100%;
-    }
-
-    .coluna2-rodape{
+    .primeiro-rodape{
         width: 100%;
-        height: 100px;
-        
-    }
-
-    .coluna3-rodape{
-        width:100%;
-        height:100px ;
-    }
-
-    .logo__rodape{
-        position:relative;
-        left: auto;
-        top:13px;
-    }
-
-    .rede-facebook{
-
-        position: relative;
-        left:auto;
-        top:15px;
-        
-        
-    
-    }
-    
-    .rede-instagram{
+        height: 120px;
     
         position: relative;
-        left:auto;
-        top:15px;
+        padding: 0;
         
+        color: black;
+        text-align: center;
+        font-size:0.8rem;
+    
+        background-color: #f6eeff;
     
     }
 
-    
-}
-
-.layout-rodape-inferior{
-      
-    position: absolute;
-    bottom:0;
-    border-top: 1px solid rgb(185, 185, 185);
-    
-    padding: 10px 0;
-
-    width: 100%;
-    height: 60px;
-    padding: 0;
-    background-color: #d1a9ff;
-}
-
-
-.direitos-autorais{
-    position: relative;
-    top: 12px;
-    
-}
-
-
-@media(max-width: 991px){
     .layout-rodape-inferior{
       
-        position: absolute;
-        bottom:-100px;     
-        
-        padding: 10px 0;
-    
         width: 100%;
         height: 60px;
         padding: 0;
+    
+        bottom:0;
+        border-top: 1px solid rgb(185, 185, 185);
+        
         background-color: #d1a9ff;
     }
-    
-    
+
     .direitos-autorais{
+    
+        padding-top: 10px;
+        text-align: center;
+        
+        color:black;
+        font-size:0.8rem;
+    }
+}
+
+/*---------------*\
+RODAPE-TELA-PEQUENA
+\*---------------*/
+
+@media(max-width: 991px){
+    
+    .logo__rodape{
         position: relative;
-        height: 40px;
-        top: 22px;
-        margin:0;
+        width: 100%;
+        height: 7rem;
+        
+    }
+
+    .logo-social{
+        position: relative;
+        width: 100%;
+        height: 7rem;
+    }
+
+    .logo-ama-rodape{
+        
+        display: block;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    .logo-social .logo-social--facebook{
+
+        display: block;
+        margin: 0 auto;
+        padding-top:1rem;
+    }
+    
+    .logo-social .logo-social--instagram{
+        display: block;
+        margin: 0 auto;
+        padding-top:1rem;
+        
+        
+        
+    }
+
+    .layout-rodape-inferior{
+      
+        width: 100%;
+        height: 60px;
+        padding: 0;
+    
+        bottom:0;
+        border-top: 1px solid rgb(185, 185, 185);
+        
+        background-color: #d1a9ff;
+    }
+
+    .direitos-autorais{
+        padding-top: 10px;
+        text-align: center;
+        
+        color:black;
+        font-size:0.8rem;
         
     }
 }
+
 
 .clearfix{
     clear:both;
