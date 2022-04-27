@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.4rem;
+}
+
+/*-------------*\
+    CABECALHO
+\*-------------*/
+header{
+    height: 104px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-cabecalho{
+    margin-top: 1px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto; /*Ajuste do container superior e inferio 0 e direita esquerda automático*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.layout-cabecalho--home{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: #fbfbfb;
+}
+
+
+/*------------------*\
+        MENU
+\*------------------*/
+.menu{
+    margin:0;
+
+    font-size: 1.4rem;
+
+    list-style: none;
+}
+
+
+
+/*------------------*\
+  MENU TELAS PEQUENAS
+\*------------------*/
+
+@media(max-width: 991px){
+    .menu{
+        position: fixed;
+        top:0;
+        left:0;
+        bottom:0;
+
+        /*Ocultando o menu para mobile
+        display:none;
+        */
+        padding: 20px;
+        width: 200px;
+        
+
+        border-right: 1px solid #eee;
+
+        background-color: #fbfbfb;
+    }
+
+    
+
+    .menu--exibindo{
+        display: block;
+        /*Ocultando o menu para mobile*/
+        display:none;
+    }
+
+    .menu__item{
+        display:block;
+
+        line-height: 3;
+    }
+
+    a{
+        text-decoration: none;
+        color: #a13dff;
+        font-weight: bold;
+    }
+
+    a:hover{
+        color: #CE9CFD;
+    }
+}
+
+/*------------------*\
+  MENU TELAS GRANDES
+\*------------------*/
+
+@media(min-width:992px){
+    .menu__item{
+        display: inline-block;
+
+        padding-top: 40px;
+        
+        padding-right:15px;
+    }
+
+    .menu__item:last-of-type{
+        padding-right:30px ;
+    }
+
+    a{
+        text-decoration: none;
+
+        height: 50px;
+
+        color: #a13dff;
+        font-weight: bold;
+    }
+
+    a:hover{
+        color: #CE9CFD;
+    }
+}
+
+
+/*-------------*\
+    NAVEGACAO
+\*-------------*/
+
+.navegacao__menu{
+    float:right;
+}
+
+/*-------------*\
+ BOTAO-CHAVEADOR
+\*-------------*/
+
+.botao-chaveador{
+    width:24px;
+    height: 24px;
+    border:0;
+    margin-top:40px;
+    margin-right: 20px;
+
+    background: none;
+    background-image: url("imagem/barras.png");
+    
+    outline: none;
+}
+
+@media(min-width: 992px){
+    .botao-chaveador{
+        display:none;
+    }
+}
+
+
+.layout-cabecalho--home::after{
+    content: "";
+    display: block;
+    clear:both;
+
+}
+
+/*-------------*\
+    CORPO-HOME
+\*-------------*/
+
+.texto-ama{
+    width: 100%;
+    margin-top: 106px;
+    height: auto;
+    
+    padding: 0;
+    z-index: 2;
+    
+    background-color: #f6eeff;
+}
+
+.primeira-letra-quem-somos{
+    font-size: 4rem;
+    color:#E50000;
+}
+
+.texto-ama--corpo{
+    padding: 20px;
+
+    
+}
+
+
+.camila-ama{
+    float: left;
+
+    margin-right: 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    box-shadow: 0px 0px 23px 0px #000000;
+
+}
+
+.evandro-ama{
+    float: right;
+
+    margin-right: 10px;
+    
+    border-radius: 10px;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    box-shadow: 0px 0px 23px 0px #000000;
+}
+
+
+
+/*-------------*\
+    RODAPE
+\*-------------*/
+
+.menu__item-rodape{
+    display: none;
+}
+
+
+
+/*---------------*\
+RODAPE-TELA-GRANDE
+\*---------------*/
+
+@media(min-width:992px){
+    .coluna1-rodape{
+        position: relative;
+        float: left;
+        width: 33%;
+               
+        height: 120px;
+
+        background-color: #f6eeff;
+    }
+
+    .coluna2-rodape{
+        position: relative;
+        float:left;
+        width: 34%;
+
+        height: 120px;
+
+        background-color: #f6eeff;
+    }
+
+    .coluna3-rodape{
+        position: relative;
+        float: right;
+        width: 33%;
+
+        height: 120px;
+
+        background-color: #f6eeff;
+    }
+
+
+    .layout-rodape{
+        position: relative;
+        width: 100%;
+        background-color: #a13dff;
+    }
+
+
+    .logo__rodape{
+        position:absolute;
+        
+        top:10px;
+        left: 20px;
+    }
+
+    .logo-social--facebook{
+        position:absolute;
+        
+        
+        left: 48%;
+        top:15px;
+
+        
+    }
+
+    .logo-social--instagram{
+        position: absolute;
+        
+
+        left: 48%;
+        top:65px;
+    }
+
+    .menu__item-rodape{
+        
+        display:block;
+
+        text-align:right;
+
+        
+        padding: 5px 60px 5px 200px;
+
+    }
+
+    .primeiro-rodape{
+        width: 100%;
+        height: 120px;
+    
+        position: relative;
+        padding: 0;
+        
+        color: black;
+        text-align: center;
+        font-size:0.8rem;
+    
+        background-color: #f6eeff;
+    
+    }
+
+    .layout-rodape-inferior{
+      
+        width: 100%;
+        height: 60px;
+        padding: 0;
+    
+        bottom:0;
+        border-top: 1px solid rgb(185, 185, 185);
+        
+        background-color: #d1a9ff;
+    }
+
+    .direitos-autorais{
+    
+        padding-top: 10px;
+        text-align: center;
+        
+        color:black;
+        font-size:0.8rem;
+    }
+}
+
+/*---------------*\
+RODAPE-TELA-PEQUENA
+\*---------------*/
+
+@media(max-width: 991px){
+    
+    .logo__rodape{
+        position: relative;
+        width: 100%;
+        height: 7rem;
+        
+    }
+
+    .logo-social{
+        position: relative;
+        width: 100%;
+        height: 7rem;
+    }
+
+    .logo-ama-rodape{
+        
+        display: block;
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    .logo-social .logo-social--facebook{
+
+        display: block;
+        margin: 0 auto;
+        padding-top:1rem;
+    }
+    
+    .logo-social .logo-social--instagram{
+        display: block;
+        margin: 0 auto;
+        padding-top:1rem;
+        
+        
+        
+    }
+
+    .layout-rodape-inferior{
+      
+        width: 100%;
+        height: 60px;
+        padding: 0;
+    
+        bottom:0;
+        border-top: 1px solid rgb(185, 185, 185);
+        
+        background-color: #d1a9ff;
+    }
+
+    .direitos-autorais{
+        padding-top: 10px;
+        text-align: center;
+        
+        color:black;
+        font-size:0.8rem;
+        
+    }
+}
+
+
+.clearfix{
+    clear:both;
+}
+
+
+
+
+
